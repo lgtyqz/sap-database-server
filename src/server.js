@@ -51,7 +51,7 @@ app.get("/pet-stats", (req, res) => {
 
 // Download entire database
 app.get("/download", (req, res) => {
-  const file = `${__dirname}/${DATABASE_FILENAME}`;
+  const file = `${__dirname}/../${DATABASE_FILENAME}`;
   res.download(file);
 });
 
