@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const multer = require("multer");
 const { open } = require('sqlite');
 const sqlite3 = require('sqlite3');
@@ -9,7 +10,9 @@ const app = express();
 const server = require("http").createServer(app);
 
 app.use(multer().none());
-app.use(express.json());
+app.use(express.json({limit: "1mb"}));
+
+app.use(cors());
 
 const STD_PORT_NUMBER = 3000;
 
@@ -30,6 +33,7 @@ open({
 });
 
 app.post("/uploadGames", async (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*');
   // Check whether request body has the proper format
   try {
     const db = await open({
