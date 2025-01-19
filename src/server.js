@@ -38,10 +38,10 @@ app.post("/upload-games", async (req, res) => {
     });
     await writeGameToDB(req.body, db);
     await db.close();
-    res.status(200);
+    res.status(200).send();
   }catch(e){
     console.log(e);
-    res.status(500);
+    res.status(500).send("A server error has occurred.");
   }
 });
 
