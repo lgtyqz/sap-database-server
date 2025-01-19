@@ -29,7 +29,7 @@ open({
   initializeDBTables(db);
 });
 
-app.post("/upload-games", async (req, res) => {
+app.post("/uploadGames", async (req, res) => {
   // Check whether request body has the proper format
   try {
     const db = await open({
