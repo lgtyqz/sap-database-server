@@ -38,6 +38,7 @@ app.post("/upload-games", async (req, res) => {
     });
     await writeGameToDB(req.body, db);
     await db.close();
+    res.status(200);
   }catch(e){
     console.log(e);
     res.status(500);
