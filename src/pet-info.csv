@@ -1,0 +1,344 @@
+Pet,ID,Tier
+Ant,0,1
+Badger,2,3
+Beaver,3,1
+Bison,5,4
+Blowfish,7,4
+Buffalo,8,4
+Camel,10,3
+Cat,11,6
+Caterpillar,12,4
+Chicken,14,5
+Cow,15,5
+Crab,16,2
+Cricket,17,1
+Cockroach,18,1
+Crocodile,19,5
+Deer,20,4
+Dodo,21,3
+Dog,22,3
+Dolphin,23,3
+Dove,24,2
+Duck,26,1
+Eagle,27,5
+Elephant,28,3
+Flamingo,29,2
+Fly,30,6
+Fish,32,1
+Giraffe,33,3
+Goat,34,5
+Gorilla,36,6
+Hedgehog,37,2
+Hippo,38,4
+Horse,39,1
+Kangaroo,40,2
+Leopard,41,6
+Lion,42,6
+Llama,44,4
+Mammoth,45,6
+Monkey,46,5
+Mosquito,47,1
+Mouse,48,1
+Octopus,50,6
+Otter,51,1
+Ox,52,3
+Parrot,53,4
+Peacock,54,2
+Rhino,55,5
+Penguin,56,4
+Rat,57,2
+Pig,59,1
+Rabbit,60,3
+Rooster,63,5
+Scorpion,65,5
+Seal,66,5
+Shrimp,67,2
+Sheep,68,3
+Shark,69,5
+Skunk,70,4
+Snail,72,2
+Snake,73,6
+Spider,74,2
+Squirrel,75,4
+Swan,76,2
+Tiger,77,6
+Tyrannosaurus,78,6
+Turkey,79,5
+Turtle,80,4
+Whale,81,4
+Worm,82,2
+Bat,87,2
+Beetle,88,1
+Bluebird,89,1
+Hatching Chick,91,3
+Ladybug,92,1
+Lobster,93,4
+Microbe,94,4
+Owl,95,3
+Poodle,96,6
+Puppy,97,3
+Sauropod,98,6
+Tabby Cat,99,2
+Tropical Fish,100,3
+Boar,103,6
+Dromedary,104,2
+Anteater,105,3
+Fox,106,5
+Panda,107,2
+Polar Bear,108,5
+Guinea Pig,109,2
+Hamster,110,5
+Donkey,111,4
+Koala,112,2
+Duckling,113,1
+Lioness,114,6
+Velociraptor,115,6
+Orca,116,6
+Clownfish,117,4
+Piranha,118,6
+Swordfish,119,5
+Eel,120,3
+Goldfish,121,3
+Jellyfish,122,2
+Hammer Shark,123,6
+Komodo,124,6
+Ostrich,125,6
+Mantis,126,4
+Hawk,127,4
+Seagull,128,4
+Pelican,129,5
+Okapi,130,3
+Kiwi,131,1
+Atlantic Puffin,132,2
+Cassowary,133,3
+Shoebill,134,5
+Vulture,135,5
+Stork,136,2
+Frigatebird,137,2
+Hummingbird,138,1
+Frog,139,1
+Bear,140,3
+Moth,141,1
+Triceratops,142,5
+Spinosaurus,143,6
+Stegosaurus,144,6
+Pug,145,3
+Siberian Husky,146,5
+Iguana,147,2
+Sabertooth,148,6
+Pillbug,149,1
+Blobfish,150,5
+Toucan,151,2
+Seahorse,152,1
+Starfish,153,5
+Capybara,154,3
+Zebra,155,5
+Woodpecker,156,5
+Orangutan,157,3
+Raccoon,158,5
+Platypus,159,4
+Wasp,160,3
+Chinchilla,161,1
+Toad,162,3
+Yak,163,2
+Salamander,164,2
+Leech,165,3
+Armadillo,166,5
+Hyena,167,5
+Mole,168,3
+Porcupine,169,3
+Wolf,170,5
+Baboon,171,3
+Ferret,172,1
+Weasel,173,3
+Catfish,174,6
+Sealion,175,4
+Cuttlefish,176,4
+Squid,177,4
+Sting Ray,178,5
+Anglerfish,180,6
+Bird Of Paradise,181,6
+Beluga Whale,182,5
+Chipmunk,184,1
+Gazelle,185,2
+Highland Cow,186,6
+Opossum,187,1
+Bulldog,189,1
+Mantis Shrimp,190,6
+Sea Turtle,191,2
+Manatee,192,4
+Aardvark,193,3
+Alpaca,194,6
+Crow,195,4
+Dragonfly,196,5
+Emporer Tamarin,197,3
+Frilled Dragon,198,1
+Jerboa,199,4
+Lynx,200,4
+Lionfish,201,6
+Moose,202,5
+Meerkat,203,3
+Marmoset,204,1
+Reindeer,205,6
+White Tiger,206,6
+Wombat,207,2
+Tapir,208,6
+Walrus,209,6
+African Penguin,210,2
+Axolotl,212,5
+Beluga Sturgeon,213,2
+Betta Fish,214,3
+Black Necked Stilt,215,2
+Chameleon,216,4
+Cobra,217,6
+Cockatoo,218,4
+Crane,219,5
+Door Head Ant,220,2
+Egyptian Vulture,221,5
+Elephant Seal,222,6
+Emu,223,5
+Falcon,224,4
+Flea,225,3
+Flying Fish,226,3
+Flying Squirrel,227,3
+Guinea Fowl,228,3
+Gecko,229,1
+German Shepherd,230,6
+Gharial,231,4
+Goose,232,1
+Groundhog,233,1
+Hercules Beetle,234,2
+Hoopoe Bird,235,3
+Lemur,236,2
+Lizard,237,2
+Macaque,238,5
+Magpie,239,1
+Manta Ray,240,4
+Mongoose,241,6
+Mosasaur,242,5
+Musk Ox,245,3
+Nyala,246,5
+Osprey,247,3
+Oyster,248,6
+Pangolin,249,3
+Panther,250,5
+Pied Tamarin,251,1
+Poison Dart Frog,252,4
+Pteranodon,253,6
+Puma,254,6
+Robin,255,2
+Royal Flycatcher,256,3
+Saiga Antelope,257,4
+Sea Urchin,258,2
+Secretary Bird,259,4
+Silkmoth,260,1
+Silver Fox,261,5
+Slug,262,4
+Stoat,263,2
+Surgeon Fish,264,3
+Vaquita,265,4
+Warthog,266,6
+Whale Shark,267,4
+Wildebeest,268,6
+Wolverine,269,6
+Blue Ringed Octopus,271,5
+Cone Snail,272,1
+Doberman,273,4
+Fire Ant,274,5
+Grizzly Bear,275,6
+Nurse Shark,276,5
+Snapping Turtle,277,5
+Stonefish,278,5
+Tiger Bug,330,4
+Anubis,331,4
+Basilisk,332,1
+Behemoth,333,6
+Bigfoot,334,2
+Great One,335,5
+Calgreyhound,336,3
+Cerberus,337,6
+Chimera,338,4
+Chupacabra,339,2
+Cockatrice,340,6
+Drop Bear,341,2
+Fairy,342,4
+Frost Wolf,344,2
+Gargoyle,345,2
+Ghost Kitten,346,2
+Griffin,348,3
+Brain Cramp,349,3
+Hippocampus,350,5
+Hydra,352,6
+Jackalope,353,2
+Kitsune,354,5
+Kraken,355,4
+Leviathan,356,6
+Mandrake,357,3
+Manticore,358,6
+Mimic,359,5
+Minotaur,360,4
+Murmel,362,1
+Nessie,363,5
+Ouroboros,364,3
+Pegasus,365,4
+Phoenix,366,6
+Quetzalcoatl,367,6
+Red Dragon,368,5
+Roc,369,4
+Salmon Of Knowledge,370,5
+Worm Of Sand,371,4
+Sea Serpent,372,6
+Abomination,373,4
+Skeleton Dog,374,3
+Slime,375,3
+Ogopogo,376,2
+Axehandle Hound,377,3
+Tree,378,3
+Tsuchinoko,379,1
+Unicorn,380,4
+Vampire Bat,381,5
+Warf,382,2
+Werewolf,383,5
+Wyvern,385,2
+Visitor,386,4
+Yeti,387,6
+Tahr,393,4
+Mandrill,405,2
+Hare,551,3
+Pigeon,559,1
+Bunyip,601,1
+Mothman,604,2
+Thunderbird,605,2
+Sleipnir,606,6
+Tandgnost,607,4
+Tandgrisner,608,4
+Nightcrawler,610,2
+Cuddle Toad,611,1
+Old Dog,612,4
+Bad Dog,613,5
+Questing Beast,616,6
+Sneaky Egg,617,1
+Pixiu,619,5
+Barghest,621,1
+Rootling,622,4
+Lucky Cat,623,3
+Foo Dog,625,3
+Alchemedes,626,1
+Baku,628,1
+Cyclops,630,4
+Golden Beetle,634,2
+Mana Hound,635,3
+Team Spirit,636,6
+Sphinx,639,2
+Loveland Frogman,640,5
+Deer Lord,651,3
+Jersey Devil,652,5
+Fur-Bearing Trout,653,3
+Tatzelwurm,654,3
+Kappa,655,5
+Boitata,656,5
+Nurikabe,657,5
+Dragon,25,6
+Bus,85,1
+Oven Mitts,311,3
+Flashlight,484,5

@@ -59,6 +59,8 @@ app.get("/download", (req, res) => {
   res.download(file);
 });
 
+app.use(express.static("src/public"));
+
 server.listen(STD_PORT_NUMBER, () => {
   console.log('listening on *:' + STD_PORT_NUMBER);
 });

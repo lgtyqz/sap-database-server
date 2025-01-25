@@ -17,6 +17,8 @@ const GAME_HISTORY_SCHEMA = [
 ];
 
 async function initializeDBTables(db){
+  // Main Databases
+
   await db.run(`
     CREATE TABLE IF NOT EXISTS "boards" (
       game_version  INTEGER NOT NULL,
@@ -44,6 +46,59 @@ async function initializeDBTables(db){
       UNIQUE(match_id, game_version)
     );
   `);
+
+  // Stats databases
+
+  await db.run(`
+    CREATE TABLE IF NOT EXISTS "players" (
+      player_id TEXT NOT NULL,
+      player_name TEXT NOT NULL,
+      pet_frequencies TEXT NOT NULL,
+      total_games INTEGER NOT NULL,
+      games_won INTEGER NOT NULL,
+      UNIQUE(player_id)
+    );
+  `);
+
+  // TODO: insert pack info
+  await db.run(`
+    CREATE TABLE IF NOT EXISTS "packs" (
+      pack_id INTEGER NOT NULL,
+      pet_frequencies TEXT NOT NULL,
+      UNIQUE(pack_id)
+    );
+    
+  `);
+
+  await db.run(`
+    CREATE TABLE IF NOT EXISTS "turns" (
+      turn_number INTEGER NOT NULL,
+      pack_id INTEGER NOT NULL,
+      pet_frequencies TEXT NOT NULL,
+      total_games INTEGER NOT NULL,
+      games_won INTEGER NOT NULL,
+      UNIQUE(turn_number)
+    );
+  `);
+
+  await db.run(`
+    CREATE TABLE IF NOT EXISTS "pets" (
+      pet_id INTEGER NOT NULL,
+      pet_name TEXT NOT NULL,
+      pack_id INTEGER NOT NULL,
+      games_seen INTEGER NOT NULL,
+      games_won INTEGER NOT NULL,
+      games_seen_early INTEGER NOT NULL,
+      games_seen_early_won INTEGER NOT NULL,
+      games_seen_lv2 INTEGER NOT NULL,
+      games_seen_lv2_won INTEGER NOT NULL,
+      pet_frequencies TEXT NOT NULL,
+      pet_frequencies_won TEXT NOT NULL,
+      UNIQUE(pet_id, pack_id)
+    );
+  `);
+
+  // TODO: Insert blank fields for all pets
 }
 
 function checkSchema(json){
@@ -78,7 +133,7 @@ async function writeGameToDB(gameJSON, db){
     let playersInfo = JSON.parse(gameJSON["GenesisModeModel"]);
     // Store in boards & games
     await db.run(`
-      INSERT INTO "games" (
+      REPLACE INTO "games" (
         game_version,
         match_id,
         player1_win,
@@ -99,6 +154,13 @@ async function writeGameToDB(gameJSON, db){
         ?,
         ?
       );
+
+      INSERT OR IGNORE INTO "players" (?, ?, ?, ?, ?, ?, ?);
+      INSERT OR IGNORE INTO "players" (?, ?, ?, ?, ?, ?, ?);
+
+      UPDATE "players" SET total_games = total_games + 1 WHERE "player1_name"=? OR "player2_name"=?
+      UPDATE "players" SET games_won = games_won + ? WHERE "player1_name"=?;
+      UPDATE "players" SET games_won = games_won + ? WHERE "player2_name"=?;
     `, [
       gameJSON["Version"],
       gameJSON["MatchId"],
@@ -114,7 +176,6 @@ async function writeGameToDB(gameJSON, db){
     for(let i = 0; i < actionsList.length; i++){
       if(actionsList[i]["Type"] === 0){
         let battleJSON = JSON.parse(actionsList[i]["Battle"]);
-        console.log(Object.keys(battleJSON));
         // Player Board
         await db.run(`
           REPLACE INTO "boards" (

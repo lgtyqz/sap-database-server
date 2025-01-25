@@ -1,0 +1,61 @@
+header.big-header h4 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 0px;
+}
+
+header.big-header h1 {
+  font-size: 64px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+header.big-header h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+figure.big-option img.big-option-icon {
+  position: absolute;
+  left: -18px;
+  top: -18px;
+  width: 48px;
+  height: 48px;
+}
+
+figure.big-option a.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+figure.big-option a.button:hover {
+  transform: scale(1.1);
+}
+
+figure.big-option a.button p {
+  position: relative;
+  background: linear-gradient(120deg, #E6396A, #EAA31E);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 48px;
+  padding-right: 48px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 12px;
+  border-radius: 20px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+figure.big-option p.button-subtitle {
+  color: #FFFFFF;
+  font-size: 18px;
+  margin: 0px;
+}

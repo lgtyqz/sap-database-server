@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Upload to SAP Versus Database</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./contribute-page.css">
+    <script src="contribute.js"></script>
+  </head>
+  <body>
+    <main>
+      <header class="big-header">
+        <img class="header-img" src="./assets/squiddy.png">
+        <h1>CONTRIBUTE</h1>
+        <img class="header-img" src="./assets/squiddy.png">
+      </header>
+
+      <form id="login-form">
+        <h3>Enter SAP Login:</h3>
+        <h4>Submitting your login will allow us to get a server auth token and upload your last 20 games automatically!<br>(our servers never see it, so your login stays private)</h4>
+        <h5>(Note that this should effectively log you out of any of your current SAP games, so you'll need to close & reopen the Super Auto Pets app afterwards)</h5>
+        <div class="form-field">
+          <p>Email</p>
+          <input type="email" id="user-email">
+        </div>
+        <div class="form-field">
+          <p>Password</p>
+          <input type="password" id="user-password">
+        </div>
+      </form>
+
+      <form id="token-form" class="hidden">
+        <h3>Enter Authorization Token:</h3>
+        <h4>To get your Authorization Token, open up the Developer Console on the Super Auto Pets browser page and go to the Network tab, then copy the response info on your login request:</h4>
+        <img src="./assets/auth-token-example.png">
+        <div class="form-field">
+          <p>Auth Token</p>
+          <input type="text" id="auth-token">
+        </div>
+      </form>
+
+      <button type='button' id="submit-button" onclick="uploadWithLogin()">Upload!</button>
+
+      <p id="switch-input-mode" onclick="switchForms()">Or, get your auth token manually</p>
+
+    </main>
+  </body>
+</html>
