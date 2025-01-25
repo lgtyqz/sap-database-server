@@ -2,9 +2,7 @@ const CURRENT_VERSION = 37;
 
 const STATUS_OK = 200;
 
-// Imagine buying a domain
-const SERVER_ADDR = "http://18.189.170.61";
-// const SERVER_ADDR = "http://localhost:3000";
+// Ok I bought a domain lmao
 
 function switchForms(){
   if(document.getElementById("token-form").classList.contains("hidden")){
@@ -113,7 +111,7 @@ async function fetchAndUploadGame(authToken, gameID){
   responseJSON["Version"] = CURRENT_VERSION;
   console.log(responseJSON);
   // POST to server
-  let uploadResponse = await fetch(`${SERVER_ADDR}/uploadGames`, {
+  let uploadResponse = await fetch(`uploadGames`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
